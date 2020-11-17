@@ -116,7 +116,7 @@ a {
 
 .intro_shadow1 {
   position: absolute;
-  top: 2%;
+  top: 2vh;
   left: 5%;
   right: 5%;
   bottom: 0;
@@ -129,7 +129,7 @@ a {
   opacity: 0.35;
   background-color: #000;
   position: absolute;
-  top: 10%;
+  top: 10vh;
   left: 6%;
   right: 6%;
   bottom: 0;
@@ -148,7 +148,7 @@ a {
 
 .intro_header {
   position: relative;
-  padding-top: 100px;
+  padding-top: 15vh;
   z-index: 3;
 }
 
