@@ -349,3 +349,33 @@ a {
   display: flex;
   flex-wrap: nowrap;
 }
+
+.roots {
+  background-color: #ebebeb;
+  padding: 80px 0;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.roots-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.roots-desc {
+  font-weight: 300;
+}
+
+.roots-desc strong {
+  font-weight: 500;
+}
+
+.roots-desc:not(:first-of-type) {
+  margin-top: 0;
+}
+
+.roots-desc:not(:last-of-type) {
+  margin-bottom: 0;
+}

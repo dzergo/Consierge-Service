@@ -313,3 +313,28 @@ a {
         }
     }
 }
+
+.roots {
+    background-color: #ebebeb;
+    padding: 80px 0;
+    color: #1c1c1c;
+    text-align: center;
+    &-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &-desc {
+        font-weight: 300;
+        strong {
+            font-weight: 500;
+        }
+        &:not(:first-of-type) {
+            margin-top: 0;
+        }
+        &:not(:last-of-type) {
+            margin-bottom: 0;
+        }
+    }
+}
