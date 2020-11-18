@@ -46,7 +46,6 @@ a {
   height: 100vh;
   position: relative;
   top: 0;
-  z-index: -1;
   /* Активная точка */
   /* Элемент точки */
   /* Лента слайдов */
@@ -82,10 +81,11 @@ a {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 700px;
+  top: 90vh;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 1003;
+  padding-left: 0;
 }
 
 .intro .slider .slick-dots li {
@@ -95,6 +95,7 @@ a {
 
 .intro .slider .slick-dots li.slick-active button {
   background-color: #fff;
+  transition: 1s;
 }
 
 .intro .slider .slick-dots li button {
@@ -103,6 +104,7 @@ a {
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 50%;
+  transition: 1s;
 }
 
 .intro .slider .slick-list {
@@ -122,7 +124,7 @@ a {
   bottom: 0;
   opacity: 0.25;
   background-color: #000;
-  z-index: 0;
+  z-index: 1001;
 }
 
 .intro_shadow2 {
@@ -133,7 +135,7 @@ a {
   left: 6%;
   right: 6%;
   bottom: 0;
-  z-index: 0;
+  z-index: 1002;
   mix-blend-mode: multiply;
 }
 
@@ -144,6 +146,7 @@ a {
   right: 0;
   width: 1024px;
   margin: 0 auto;
+  z-index: 1003;
 }
 
 .intro_header {
@@ -350,32 +353,165 @@ a {
   flex-wrap: nowrap;
 }
 
-.roots {
+.roots,
+.assistance {
   background-color: #ebebeb;
+}
+
+.roots .container,
+.assistance .container {
   padding: 80px 0;
   color: #1c1c1c;
   text-align: center;
 }
 
-.roots-title {
+.roots-title,
+.assistance-title {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.roots-desc {
+.roots-desc,
+.assistance-desc {
   font-weight: 300;
 }
 
-.roots-desc strong {
+.roots-desc strong,
+.assistance-desc strong {
   font-weight: 500;
 }
 
-.roots-desc:not(:first-of-type) {
+.roots-desc:not(:first-of-type),
+.assistance-desc:not(:first-of-type) {
   margin-top: 0;
 }
 
-.roots-desc:not(:last-of-type) {
+.roots-desc:not(:last-of-type),
+.assistance-desc:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.assistance {
+  background-color: #fff;
+}
+
+.assistance-desc:last-of-type {
+  margin-bottom: 20px;
+}
+
+.assistance-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.assistance-card-item {
+  width: 47%;
+  height: 320px;
+  background-color: gray;
+  margin-bottom: 6%;
+  text-align: center;
+  color: #1c1c1c;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 100%;
+  cursor: default;
+}
+
+.assistance-card-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
+  background-color: #fff;
+  opacity: 70%;
+  z-index: 0;
+  transition: 1s;
+}
+
+.assistance-card-item:nth-of-type(3n), .assistance-card-item:nth-of-type(5n+2) {
+  color: #fff;
+}
+
+.assistance-card-item:nth-of-type(3n)::after, .assistance-card-item:nth-of-type(5n+2)::after {
+  opacity: 72%;
+  background-color: #303030;
+}
+
+.assistance-card-item:hover::after {
+  opacity: 50%;
+}
+
+.assistance-card-item:nth-of-type(1) {
+  background-image: url(../img/uslugi/uslugi1.png);
+}
+
+.assistance-card-item:nth-of-type(2) {
+  background-image: url(../img/uslugi/uslugi2.png);
+}
+
+.assistance-card-item:nth-of-type(3) {
+  background-image: url(../img/uslugi/uslugi3.png);
+}
+
+.assistance-card-item:nth-of-type(4) {
+  background-image: url(../img/uslugi/uslugi4.jpg);
+}
+
+.assistance-card-item:nth-of-type(5) {
+  background-image: url(../img/uslugi/uslugi5.png);
+}
+
+.assistance-card-item:nth-of-type(6) {
+  background-image: url(../img/uslugi/uslugi6.png);
+}
+
+.assistance-card-item:nth-of-type(7) {
+  background-image: url(../img/uslugi/uslugi7.png);
+}
+
+.assistance-card-item:nth-of-type(8) {
+  background-image: url(../img/uslugi/uslugi8.png);
+}
+
+.assistance-card-item .title {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.assistance-card-item .title:first-of-type {
+  margin-bottom: 0;
+}
+
+.assistance-card-item .title:last-of-type {
+  margin-top: 0;
+}
+
+.assistance-card-item .desc {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.assistance-card-item .desc:not(:first-of-type) {
+  margin-top: 0;
+}
+
+.assistance-card-item .desc:not(:last-of-type) {
   margin-bottom: 0;
 }

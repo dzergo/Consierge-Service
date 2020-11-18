@@ -14,10 +14,10 @@ $(document).ready(function() {
         arrows: false,
         dots: true,
         slidesToShow: 1,
-        speed: 5000,
+        speed: 3000,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        waitForAnimate: false,
+        waitForAnimate: true,
     });
 });
