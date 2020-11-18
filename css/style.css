@@ -27,7 +27,7 @@ a {
 }
 
 .container {
-  width: 1024px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -105,6 +105,7 @@ a {
   background-color: transparent;
   border-radius: 50%;
   transition: 1s;
+  cursor: pointer;
 }
 
 .intro .slider .slick-list {
@@ -142,8 +143,8 @@ a {
 .intro .container {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 7%;
+  right: 7%;
   width: 1024px;
   margin: 0 auto;
   z-index: 1003;
@@ -354,47 +355,70 @@ a {
 }
 
 .roots,
-.assistance {
+.assistance,
+.howwework {
   background-color: #ebebeb;
 }
 
 .roots .container,
-.assistance .container {
+.assistance .container,
+.howwework .container {
   padding: 80px 0;
   color: #1c1c1c;
   text-align: center;
 }
 
 .roots-title,
-.assistance-title {
+.assistance-title,
+.howwework-title {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 18px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.roots-title a,
+.assistance-title a,
+.howwework-title a {
+  text-decoration: underline;
+  color: #000;
+  font-size: 15px;
+}
+
+.roots-title a:hover,
+.assistance-title a:hover,
+.howwework-title a:hover {
+  text-decoration: none;
 }
 
 .roots-desc,
-.assistance-desc {
+.assistance-desc,
+.howwework-desc {
   font-weight: 300;
 }
 
 .roots-desc strong,
-.assistance-desc strong {
+.assistance-desc strong,
+.howwework-desc strong {
   font-weight: 500;
 }
 
 .roots-desc:not(:first-of-type),
-.assistance-desc:not(:first-of-type) {
+.assistance-desc:not(:first-of-type),
+.howwework-desc:not(:first-of-type) {
   margin-top: 0;
 }
 
 .roots-desc:not(:last-of-type),
-.assistance-desc:not(:last-of-type) {
+.assistance-desc:not(:last-of-type),
+.howwework-desc:not(:last-of-type) {
   margin-bottom: 0;
 }
 
 .assistance {
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
 .assistance-desc:last-of-type {
@@ -513,5 +537,64 @@ a {
 }
 
 .assistance-card-item .desc:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.howwework {
+  background-color: #ebebeb;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.howwework .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.howwework-title {
+  font-weight: 600;
+}
+
+.howwework-column {
+  width: 40%;
+}
+
+.howwework-column-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.howwework-column-wrapper:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.howwework-column-wrapper:last-of-type {
+  align-items: flex-end;
+}
+
+.howwework-column-wrapper_digit {
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.howwework-column-wrapper_desc {
+  font-size: 15px;
+}
+
+.howwework-column-wrapper_desc:not(:first-of-type) {
+  margin-top: 0;
+}
+
+.howwework-column-wrapper_desc:not(:last-of-type) {
   margin-bottom: 0;
 }
