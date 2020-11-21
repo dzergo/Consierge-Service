@@ -53,7 +53,7 @@
         background-position: 100% 100%;
         position: relative;
         height: 100vh;
-        min-width: 1024px;
+        min-width: 0;
         width: 100%;
         overflow: hidden;
         .slider {
@@ -221,10 +221,13 @@
             &-item {
                 width: 23%;
                 .cards-item {
+                   
                     &_title {
                         font-weight: 500;
+                        white-space: nowrap;
                     }
                     &_desc {
+                        white-space: nowrap;
                         margin-top: 0;
                         margin: 0;
                         font-size: 14px;
@@ -238,7 +241,7 @@
                     &_price {
                         font-size: 25px;
                         &-last {
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -342,11 +345,13 @@
             margin-bottom: 30px;
             text-align: center;
             a {
-                text-decoration: underline;
+                text-decoration: none;
+                border: 1px solid;
+                padding: 10px;
                 color: #000;
                 font-size: 15px;
                 &:hover {
-                    text-decoration: none;
+                    background-color: rgb(248, 248, 248);
                 }
             }
         }
@@ -616,5 +621,150 @@
                 @include flexcenter();
             }
             margin-bottom: 70px;
+        }
+    }
+
+    @media (max-width:1025px) {
+        .intro {
+            min-width: 0;
+            width: 100%;
+            .container {
+            width: initial;
+            .main {
+                width: 100%;
+            }
+            }
+            &_header {
+                &_nav {
+                    flex-wrap: wrap;
+
+                }
+                &-item {
+                    font-size: 19px;
+                    width: 26%;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+        }
+        .service_cards-item {
+            height: 242px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            .cards-item_title {
+                white-space: initial;
+            }
+            .cards-item_desc {
+                white-space: initial;
+            }
+        }
+        .assistance {
+            &-card {
+                padding:0;
+                margin-bottom: 50px;
+                &-item {
+                    width: 50%;
+                    margin-bottom: 0;
+                    padding-top: 75px;
+                    height: 250px;
+                    .title {
+                        font-size: 14px;
+                    }
+                    .desc {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .howwework-column {
+            width: 50%;
+            height: 458px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            p, div {
+                margin: 0 10px;
+            }
+        }
+
+        .howwework,
+        .advantages {
+            .container {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .advantages {
+            &-column {
+                width: 48%;
+            }
+        }
+        .years6 .slider2 {
+            width: 100%;
+            min-width: 0;
+        }
+    }
+
+    @media (max-width:415px) {
+        .intro_header-item {
+            width: 50%;
+            margin-bottom: 12px;
+        }
+        .intro .main-title {
+            font-size: 55px;
+            margin-bottom: 77px;
+        }
+        .service_cards { 
+            flex-wrap:wrap;
+            &-item {
+                width:50%;
+                
+            }
+        }
+        .assistance-card-item {
+            width: 100%;
+        }
+        .howwework  ,.advantages
+        {
+            &-column {
+                width:100%;
+                height:320px;
+                margin-bottom:40px;
+            }
+            .container{
+            flex-wrap:wrap;
+            padding-bottom: 0;
+            }
+        }
+        .howwework {
+            &-column {
+            &-wrapper:last-of-type {
+                align-items:center;
+            }}
+        }
+        .advantages {
+            &-column
+            {
+                height:initial;
+            }
+            padding-bottom:50px;
+        }
+        .footer {
+            padding: 50px 10%;
+            &-form {
+                width: 100%;
+                height: 50px;
+                flex-wrap: wrap;
+                &-input {
+                    width: 100%;
+                }
+                &-button {
+                    width: 100%;
+                }
+            }
         }
     }

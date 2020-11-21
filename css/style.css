@@ -35,7 +35,7 @@ a {
   background-position: 100% 100%;
   position: relative;
   height: 100vh;
-  min-width: 1024px;
+  min-width: 0;
   width: 100%;
   overflow: hidden;
 }
@@ -241,9 +241,11 @@ a {
 
 .service_cards-item .cards-item_title {
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .service_cards-item .cards-item_desc {
+  white-space: nowrap;
   margin-top: 0;
   margin: 0;
   font-size: 14px;
@@ -262,7 +264,7 @@ a {
 }
 
 .service_cards-item .cards-item_price-last {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .years6 .slider2 {
@@ -383,7 +385,9 @@ a {
 .roots-title a,
 .assistance-title a,
 .howwework-title a {
-  text-decoration: underline;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px;
   color: #000;
   font-size: 15px;
 }
@@ -391,7 +395,7 @@ a {
 .roots-title a:hover,
 .assistance-title a:hover,
 .howwework-title a:hover {
-  text-decoration: none;
+  background-color: #f8f8f8;
 }
 
 .roots-desc,
@@ -758,4 +762,130 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1025px) {
+  .intro {
+    min-width: 0;
+    width: 100%;
+  }
+  .intro .container {
+    width: initial;
+  }
+  .intro .container .main {
+    width: 100%;
+  }
+  .intro_header_nav {
+    flex-wrap: wrap;
+  }
+  .intro_header-item {
+    font-size: 19px;
+    width: 26%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .service_cards-item {
+    height: 242px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service_cards-item .cards-item_title {
+    white-space: initial;
+  }
+  .service_cards-item .cards-item_desc {
+    white-space: initial;
+  }
+  .assistance-card {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .assistance-card-item {
+    width: 50%;
+    margin-bottom: 0;
+    padding-top: 75px;
+    height: 250px;
+  }
+  .assistance-card-item .title {
+    font-size: 14px;
+  }
+  .assistance-card-item .desc {
+    font-size: 14px;
+  }
+  .howwework-column {
+    width: 50%;
+    height: 458px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .howwework-column p, .howwework-column div {
+    margin: 0 10px;
+  }
+  .howwework .container,
+  .advantages .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .advantages-column {
+    width: 48%;
+  }
+  .years6 .slider2 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 415px) {
+  .intro_header-item {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .intro .main-title {
+    font-size: 55px;
+    margin-bottom: 77px;
+  }
+  .service_cards {
+    flex-wrap: wrap;
+  }
+  .service_cards-item {
+    width: 50%;
+  }
+  .assistance-card-item {
+    width: 100%;
+  }
+  .howwework-column, .advantages-column {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 40px;
+  }
+  .howwework .container, .advantages .container {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .howwework-column-wrapper:last-of-type {
+    align-items: center;
+  }
+  .advantages {
+    padding-bottom: 50px;
+  }
+  .advantages-column {
+    height: initial;
+  }
+  .footer {
+    padding: 50px 10%;
+  }
+  .footer-form {
+    width: 100%;
+    height: 50px;
+    flex-wrap: wrap;
+  }
+  .footer-form-input {
+    width: 100%;
+  }
+  .footer-form-button {
+    width: 100%;
+  }
 }
