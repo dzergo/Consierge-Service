@@ -710,6 +710,9 @@
     }
 
     @media (max-width:415px) {
+        .intro .main {
+            padding-top: 40px;
+        }
         .intro_header-item {
             width: 50%;
             margin-bottom: 12px;
