@@ -1,10 +1,25 @@
+//  анимация якоря
+//  menu yakor
+$(document).ready(function() {
+    $("#menu").on("click", "a", function(event) {
+        event.preventDefault();
+        var id = $(this).attr("href"),
+            top = $(id).offset().top;
+        $("body,html").animate({
+                scrollTop: top,
+            },
+            500
+        );
+    });
+});
+
 // slick slider
 $(document).ready(function() {
     $('.slider').slick({
         arrows: false,
         dots: true,
         slidesToShow: 1,
-        speed: 5000,
+        speed: 3000,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
