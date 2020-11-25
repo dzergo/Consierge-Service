@@ -370,7 +370,7 @@
     }
     
     .assistance {
-        background-color: #fff;
+        background-color: #ebebeb;
         padding-bottom: 50px;
         &-desc {
             &:last-of-type {
@@ -555,6 +555,10 @@
                 font-size: 18px;
             }
         }
+    }
+    
+    .howwework {
+        background-color: #fff;
     }
     
     @mixin inputStyle {

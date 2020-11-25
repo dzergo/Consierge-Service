@@ -423,7 +423,7 @@ a {
 }
 
 .assistance {
-  background-color: #fff;
+  background-color: #ebebeb;
   padding-bottom: 50px;
 }
 
@@ -668,6 +668,10 @@ a {
 
 .advantages-wrapper p {
   font-size: 18px;
+}
+
+.howwework {
+  background-color: #fff;
 }
 
 .footer {
