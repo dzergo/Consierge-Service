@@ -36,3 +36,9 @@ $(document).ready(function() {
         waitForAnimate: true,
     });
 });
+
+// Смотреть все услуги
+seeUslugi.onclick = function (){
+    $('.assistance-card-item').removeClass( 'animation', 5000, 'EaseIn' );
+    seeUslugi.style.display = "none";
+}

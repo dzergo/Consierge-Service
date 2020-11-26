@@ -16,7 +16,7 @@
         background-size: cover;
         background-image: url($bgimg);
     }
-    
+
     body {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
@@ -337,23 +337,22 @@
             padding: 80px 0;
             color: #1c1c1c;
             text-align: center;
+
         }
-        &-title {
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 18px;
-            margin-bottom: 30px;
-            text-align: center;
-            a {
+        &-link {
                 text-decoration: none;
                 border: 1px solid;
                 padding: 10px;
                 color: #000;
                 font-size: 15px;
+                margin-bottom: 30px;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 18px;
+                text-align: center;
                 &:hover {
                     background-color: rgb(248, 248, 248);
                 }
-            }
         }
         &-desc {
             font-weight: 300;
@@ -372,6 +371,7 @@
     .assistance {
         background-color: #ebebeb;
         padding-bottom: 50px;
+        text-align: center;
         &-desc {
             &:last-of-type {
                 margin-bottom: 20px;
@@ -384,6 +384,7 @@
             flex-wrap: wrap;
             width: 100%;
             padding: 0 10%;
+            overflow: hidden;
             &-item {
                 width: 47%;
                 height: 320px;
@@ -397,6 +398,21 @@
                 position: relative;
                 opacity: 100%;
                 cursor: default;
+                transition: all 1s ease-out;
+                &.animation {
+                height: 0;
+                opacity: 0;
+                margin: 0;
+                padding: 0;
+                // animation: example_animation 500ms;
+                // animation-fill-mode: forwards;
+                // -webkit-animation: example_animation 500ms;
+                // -webkit-animation-fill-mode: forwards;
+                // opacity:100%;
+                // height:320px;
+                // margin-bottom: 6%;
+                // padding-top: 100px;
+                }
                 &::after {
                     content: "";
                     position: absolute;
@@ -472,6 +488,46 @@
                     z-index: 1;
                 }
             }
+        }
+    }
+
+    @keyframes example_animation {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity:100%;
+            height:320px;
+            margin-bottom: 6%;
+            padding-top: 100px;
+        }
+    }
+    
+    @-webkit-keyframes example_animation {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity:100%;
+            height:320px;
+            margin-bottom: 6%;
+            padding-top: 100px;
         }
     }
     
