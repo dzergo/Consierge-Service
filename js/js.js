@@ -38,7 +38,10 @@ $(document).ready(function() {
 });
 
 // Смотреть все услуги
+
+$(document).ready(function() {
 seeUslugi.onclick = function (){
     $('.assistance-card-item').removeClass( 'animation', 5000, 'EaseIn' );
     seeUslugi.style.display = "none";
-}
+    }
+});
