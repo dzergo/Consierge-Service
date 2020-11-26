@@ -473,11 +473,11 @@ a {
   transition: 1s;
 }
 
-.assistance-card-item:nth-of-type(3n), .assistance-card-item:nth-of-type(5n+2) {
+.assistance-card-item:nth-of-type(4n+3), .assistance-card-item:nth-of-type(4n+2) {
   color: #fff;
 }
 
-.assistance-card-item:nth-of-type(3n)::after, .assistance-card-item:nth-of-type(5n+2)::after {
+.assistance-card-item:nth-of-type(4n+3)::after, .assistance-card-item:nth-of-type(4n+2)::after {
   opacity: 72%;
   background-color: #303030;
 }
@@ -486,35 +486,56 @@ a {
   opacity: 55%;
 }
 
-.assistance-card-item:nth-of-type(1) {
+.assistance-card-item.podbiraem-broniruem {
   background-image: url(../img/uslugi/uslugi1.png);
 }
 
-.assistance-card-item:nth-of-type(2) {
+.assistance-card-item.organizaciya-chastnih {
   background-image: url(../img/uslugi/uslugi2.png);
 }
 
-.assistance-card-item:nth-of-type(3) {
+.assistance-card-item.predostavleniya-transfera {
   background-image: url(../img/uslugi/uslugi3.png);
 }
 
-.assistance-card-item:nth-of-type(4) {
+.assistance-card-item.predostavleniya-ohrani {
+  background-image: url(../img/uslugi/predostavleniya-ohrani.jpg);
+  background-position: 120%;
+}
+
+.assistance-card-item.arenda-yaht {
   background-image: url(../img/uslugi/uslugi4.jpg);
 }
 
-.assistance-card-item:nth-of-type(5) {
+.assistance-card-item.organizaciya-detskogo {
+  background-image: url(../img/uslugi/organizaciya-detskogo.jpg);
+}
+
+.assistance-card-item.gastro-turi {
   background-image: url(../img/uslugi/uslugi5.png);
 }
 
-.assistance-card-item:nth-of-type(6) {
+.assistance-card-item.gastro-gid {
+  background-image: url(../img/uslugi/gastro-gid.jpg);
+}
+
+.assistance-card-item.gastro-gid div p {
+  font-size: 13px;
+}
+
+.assistance-card-item.dostup-k-luchshim {
   background-image: url(../img/uslugi/uslugi6.png);
 }
 
-.assistance-card-item:nth-of-type(7) {
+.assistance-card-item.travel-turi {
+  background-image: url(../img/uslugi/travel-turi.jpg);
+}
+
+.assistance-card-item.zakaz-dostavka {
   background-image: url(../img/uslugi/uslugi7.png);
 }
 
-.assistance-card-item:nth-of-type(8) {
+.assistance-card-item.uslugi-somelie {
   background-image: url(../img/uslugi/uslugi8.png);
 }
 
@@ -549,24 +570,6 @@ a {
 
 .assistance-card-item .desc:not(:last-of-type) {
   margin-bottom: 0;
-}
-
-@keyframes example_animation {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    opacity: 100%;
-    height: 320px;
-    margin-bottom: 6%;
-    padding-top: 100px;
-  }
 }
 
 .howwework,

@@ -425,8 +425,8 @@
                     z-index: 0;
                     transition: 1s;
                 }
-                &:nth-of-type(3n),
-                &:nth-of-type(5n+2) {
+                &:nth-of-type(4n+3),
+                &:nth-of-type(4n+2) {
                     color: #fff;
                     &::after {
                         opacity: 72%;
@@ -436,30 +436,47 @@
                 &:hover::after {
                     opacity: 55%;
                 }
-                &:nth-of-type(1) {
+                &.podbiraem-broniruem {
                     background-image: url(../img/uslugi/uslugi1.png);
                 }
-                &:nth-of-type(2) {
+                &.organizaciya-chastnih {
                     background-image: url(../img/uslugi/uslugi2.png);
                 }
-                &:nth-of-type(3) {
+                &.predostavleniya-transfera {
                     background-image: url(../img/uslugi/uslugi3.png);
                 }
-                &:nth-of-type(4) {
+                &.predostavleniya-ohrani {
+                    background-image: url(../img/uslugi/predostavleniya-ohrani.jpg);
+                    background-position: 120%;
+                }
+                &.arenda-yaht {
                     background-image: url(../img/uslugi/uslugi4.jpg);
                 }
-                &:nth-of-type(5) {
+                &.organizaciya-detskogo {
+                    background-image: url(../img/uslugi/organizaciya-detskogo.jpg);
+                }
+                &.gastro-turi {
                     background-image: url(../img/uslugi/uslugi5.png);
                 }
-                &:nth-of-type(6) {
+                &.gastro-gid {
+                    background-image: url(../img/uslugi/gastro-gid.jpg);
+                    div p {
+                        font-size: 13px;
+                    }
+                }
+                &.dostup-k-luchshim {
                     background-image: url(../img/uslugi/uslugi6.png);
                 }
-                &:nth-of-type(7) {
+                &.travel-turi {
+                    background-image: url(../img/uslugi/travel-turi.jpg);
+                }
+                &.zakaz-dostavka {
                     background-image: url(../img/uslugi/uslugi7.png);
                 }
-                &:nth-of-type(8) {
+                &.uslugi-somelie {
                     background-image: url(../img/uslugi/uslugi8.png);
                 }
+                
                 .title {
                     font-size: 18px;
                     font-weight: 500;
@@ -488,46 +505,6 @@
                     z-index: 1;
                 }
             }
-        }
-    }
-
-    @keyframes example_animation {
-        0% {
-            opacity: 0;
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            height: 0;
-            margin: 0;
-            padding: 0;
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity:100%;
-            height:320px;
-            margin-bottom: 6%;
-            padding-top: 100px;
-        }
-    }
-    
-    @-webkit-keyframes example_animation {
-        0% {
-            opacity: 0;
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            height: 0;
-            margin: 0;
-            padding: 0;
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity:100%;
-            height:320px;
-            margin-bottom: 6%;
-            padding-top: 100px;
         }
     }
     
