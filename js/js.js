@@ -45,7 +45,7 @@ seeUslugi.onclick = function (){
     function elongation() {
         $('.assistance-card-item').removeClass( 'animation', 3000, 'EaseIn' );
     }
-    setTimeout(elongation, 100);
+    setTimeout(elongation, 500);
     // убрать остальное
     $('.assistance-card-item').removeClass( 'height-animation', 2800, 'EaseIn' );
     }
