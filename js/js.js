@@ -41,7 +41,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 seeUslugi.onclick = function (){
-    $('.assistance-card-item').removeClass( 'animation', 5000, 'EaseIn' );
-    seeUslugi.style.display = "none";
+    // убрать высоту
+    function elongation() {
+        $('.assistance-card-item').removeClass( 'animation', 3000, 'EaseIn' );
+    }
+    setTimeout(elongation, 100);
+    // убрать остальное
+    $('.assistance-card-item').removeClass( 'height-animation', 2800, 'EaseIn' );
     }
 });
