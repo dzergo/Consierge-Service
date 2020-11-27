@@ -454,8 +454,11 @@ a {
 }
 
 .assistance-card-item.animation {
-  height: 0;
   opacity: 0;
+}
+
+.assistance-card-item.height-animation {
+  height: 0;
   margin: 0;
   padding: 0;
 }
@@ -888,6 +891,16 @@ a {
   }
   .assistance-card-item {
     width: 100%;
+    color: #fff;
+  }
+  .assistance-card-item::after {
+    background-color: #303030;
+  }
+  .assistance-card-item:nth-of-type(2n) {
+    color: #1c1c1c;
+  }
+  .assistance-card-item:nth-of-type(2n)::after {
+    background-color: #fff;
   }
   .howwework-column, .advantages-column {
     width: 100%;
@@ -897,6 +910,9 @@ a {
   .howwework .container, .advantages .container {
     flex-wrap: wrap;
     padding-bottom: 0;
+  }
+  .howwework-column-wrapper_digit {
+    width: 12%;
   }
   .howwework-column-wrapper:last-of-type {
     align-items: center;

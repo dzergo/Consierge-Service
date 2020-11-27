@@ -400,10 +400,7 @@
                 cursor: default;
                 transition: all 1s ease-out;
                 &.animation {
-                height: 0;
                 opacity: 0;
-                margin: 0;
-                padding: 0;
                 // animation: example_animation 500ms;
                 // animation-fill-mode: forwards;
                 // -webkit-animation: example_animation 500ms;
@@ -412,6 +409,11 @@
                 // height:320px;
                 // margin-bottom: 6%;
                 // padding-top: 100px;
+                }
+                &.height-animation {
+                    height: 0;
+                    margin: 0;
+                    padding: 0;
                 }
                 &::after {
                     content: "";
@@ -767,6 +769,16 @@
         }
         .assistance-card-item {
             width: 100%;
+            color: #fff;
+            &::after {
+                background-color: #303030;
+            }
+            &:nth-of-type(2n) {
+                color: #1c1c1c;
+                &::after {
+                    background-color: #fff;
+                }
+            }
         }
         .howwework  ,.advantages
         {
@@ -782,9 +794,16 @@
         }
         .howwework {
             &-column {
-            &-wrapper:last-of-type {
+            &-wrapper {
+            &_digit {
+                width: 12%;
+            }
+            &:last-of-type {
                 align-items:center;
-            }}
+                    }
+                    
+                }
+            }
         }
         .advantages {
             &-column
