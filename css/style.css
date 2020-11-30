@@ -65,6 +65,7 @@ a {
 
 .intro .slider__item .consierge-img {
   background-image: url(../img/bgimg.jpg);
+  background-position-y: 60%;
 }
 
 .intro .slider__item .yahta-img {
@@ -194,12 +195,20 @@ a {
   line-height: 0.95;
   text-align: center;
   font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.intro .main-videoButton {
+  width: 70px;
+  display: inherit;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .intro .main-desc {
   text-align: center;
   font-weight: 200;
-  font-size: 19px;
+  font-size: 18px;
   margin-top: 10px;
 }
 
@@ -607,7 +616,7 @@ a {
 }
 
 .howwework,
-.advantages,
+.advantages, .tarifi, .faces,
 .footer {
   background-color: #ebebeb;
   padding-top: 90px;
@@ -615,7 +624,7 @@ a {
 }
 
 .howwework .container,
-.advantages .container,
+.advantages .container, .tarifi .container, .faces .container,
 .footer .container {
   display: flex;
   justify-content: space-between;
@@ -626,20 +635,22 @@ a {
 }
 
 .howwework-title,
-.advantages-title,
+.advantages-title, .tarifi-title, .faces-title,
 .footer-title {
   font-weight: 600;
   font-size: 19px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .howwework-column,
-.advantages-column,
+.advantages-column, .tarifi-column, .faces-column,
 .footer-column {
   width: 40%;
 }
 
 .howwework-column-wrapper,
-.advantages-column-wrapper,
+.advantages-column-wrapper, .tarifi-column-wrapper, .faces-column-wrapper,
 .footer-column-wrapper {
   display: flex;
   justify-content: space-between;
@@ -650,19 +661,19 @@ a {
 }
 
 .howwework-column-wrapper:not(:last-of-type),
-.advantages-column-wrapper:not(:last-of-type),
+.advantages-column-wrapper:not(:last-of-type), .tarifi-column-wrapper:not(:last-of-type), .faces-column-wrapper:not(:last-of-type),
 .footer-column-wrapper:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
 .howwework-column-wrapper:last-of-type,
-.advantages-column-wrapper:last-of-type,
+.advantages-column-wrapper:last-of-type, .tarifi-column-wrapper:last-of-type, .faces-column-wrapper:last-of-type,
 .footer-column-wrapper:last-of-type {
   align-items: flex-end;
 }
 
 .howwework-column-wrapper_digit,
-.advantages-column-wrapper_digit,
+.advantages-column-wrapper_digit, .tarifi-column-wrapper_digit, .faces-column-wrapper_digit,
 .footer-column-wrapper_digit {
   font-size: 60px;
   font-weight: 500;
@@ -671,19 +682,19 @@ a {
 }
 
 .howwework-column-wrapper_desc,
-.advantages-column-wrapper_desc,
+.advantages-column-wrapper_desc, .tarifi-column-wrapper_desc, .faces-column-wrapper_desc,
 .footer-column-wrapper_desc {
   font-size: 15px;
 }
 
 .howwework-column-wrapper_desc:not(:first-of-type),
-.advantages-column-wrapper_desc:not(:first-of-type),
+.advantages-column-wrapper_desc:not(:first-of-type), .tarifi-column-wrapper_desc:not(:first-of-type), .faces-column-wrapper_desc:not(:first-of-type),
 .footer-column-wrapper_desc:not(:first-of-type) {
   margin-top: 0;
 }
 
 .howwework-column-wrapper_desc:not(:last-of-type),
-.advantages-column-wrapper_desc:not(:last-of-type),
+.advantages-column-wrapper_desc:not(:last-of-type), .tarifi-column-wrapper_desc:not(:last-of-type), .faces-column-wrapper_desc:not(:last-of-type),
 .footer-column-wrapper_desc:not(:last-of-type) {
   margin-bottom: 0;
 }
@@ -694,8 +705,18 @@ a {
 }
 
 .advantages-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.advantages-title:nth-of-type(1) {
+  margin-bottom: 25px;
+}
+
+.advantages-title:last-of-type {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .advantages .container {
@@ -728,6 +749,61 @@ a {
 
 .advantages-wrapper p {
   font-size: 18px;
+}
+
+.tarifi {
+  background-color: #ebebeb;
+  max-width: 100%;
+  padding-bottom: 50px;
+}
+
+.tarifi .container {
+  display: block;
+}
+
+.tarifi-card {
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.tarifi-card-title {
+  font-size: 23px;
+}
+
+.tarifi-card-desc {
+  position: relative;
+  line-height: 30px;
+  text-align: left;
+}
+
+.tarifi-card-desc-first {
+  margin: 30px 0 30px 0;
+  font-weight: 500;
+}
+
+.tarifi-card-desc:nth-last-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.tarifi-card-desc::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  padding: 2.7px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.tarifi-card-price {
+  text-align: center;
+  font-weight: 400;
+}
+
+.faces {
+  background-color: #fff;
 }
 
 .howwework {
@@ -903,16 +979,19 @@ a {
 }
 
 @media (max-width: 415px) {
-  .intro .main {
-    padding-top: 40px;
-  }
   .intro_header-item {
     width: 50%;
     margin-bottom: 12px;
   }
+  .intro .main {
+    padding-top: 40px;
+  }
   .intro .main-title {
     font-size: 55px;
-    margin-bottom: 77px;
+    margin-bottom: 40px;
+  }
+  .intro .main-videoButton {
+    margin-bottom: 46px;
   }
   .service_cards {
     flex-wrap: wrap;
@@ -967,5 +1046,62 @@ a {
   }
   .footer-form-button {
     width: 100%;
+  }
+}
+
+@media (max-width: 377px) {
+  .intro_header-item {
+    font-size: 1em;
+  }
+  .intro .main-subtitle {
+    font-size: 1.6em;
+  }
+  .intro .main-title {
+    font-size: 3.2em;
+    margin-bottom: 30px;
+  }
+  .intro .main-videoButton {
+    width: 80px;
+  }
+  .intro .main-desc {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 376px) and (height: 812px) {
+  .intro .main {
+    padding-top: 80px;
+  }
+  .intro .main-title {
+    margin-bottom: 61px;
+  }
+  .intro .main-videoButton {
+    margin-bottom: 51px;
+  }
+}
+
+@media (max-width: 321px) {
+  .intro {
+    font-size: 0.8em;
+  }
+  .intro_header-item {
+    font-size: 1.2em;
+  }
+  .intro .main {
+    padding-top: 25px;
+  }
+  .intro .main-subtitle {
+    font-size: 1.6em;
+  }
+  .intro .main-title {
+    font-size: 3.2em;
+    margin-bottom: 25px;
+  }
+  .intro .main-videoButton {
+    width: 70px;
+    margin-bottom: 25px;
+  }
+  .intro .main-desc {
+    font-size: 1.1em;
   }
 }
