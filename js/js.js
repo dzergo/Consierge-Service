@@ -45,7 +45,16 @@ seeUslugi.onclick = function (){
     function elongation() {
         $('.assistance-card-item').removeClass( 'animation', 3000, 'EaseIn' );
     }
-    setTimeout(elongation, 500);
+
+    // убрать кнопку
+    function buttonDissapear () {
+        assistance.style.paddingBottom = "0";
+        assistanceCard.style.marginBottom = "0";
+        seeUslugi.style.display = "none";
+    }
+    
+    setTimeout(elongation, 100);
+    setTimeout(buttonDissapear, 600);
     // убрать остальное
     $('.assistance-card-item').removeClass( 'height-animation', 2800, 'EaseIn' );
     }
