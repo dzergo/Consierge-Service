@@ -471,7 +471,7 @@ a {
   right: 0px;
   bottom: 0px;
   background-color: #fff;
-  opacity: 70%;
+  opacity: 50%;
   z-index: 0;
   transition: 1s;
 }
@@ -503,7 +503,6 @@ a {
 
 .assistance-card-item.predostavleniya-ohrani {
   background-image: url(../img/uslugi/predostavleniya-ohrani.jpg);
-  background-position: 120%;
 }
 
 .assistance-card-item.arenda-yaht {
@@ -540,6 +539,38 @@ a {
 
 .assistance-card-item.uslugi-somelie {
   background-image: url(../img/uslugi/uslugi8.jpg);
+}
+
+.assistance-card-item.uslugi-somelie2 {
+  background-image: url(../img/uslugi/somelie2.jpg);
+}
+
+.assistance-card-item.semeyniy-uzhin {
+  background-image: url(../img/uslugi/semeyniy-uzhin.jpg);
+}
+
+.assistance-card-item.gifts {
+  background-image: url(../img/uslugi/gifts.jpg);
+}
+
+.assistance-card-item.bileti {
+  background-image: url(../img/uslugi/bileti.jpg);
+}
+
+.assistance-card-item.kartini {
+  background-image: url(../img/uslugi/kartini.jpg);
+}
+
+.assistance-card-item.butiki {
+  background-image: url(../img/uslugi/butiki.jpg);
+}
+
+.assistance-card-item.personal {
+  background-image: url(../img/uslugi/personal.jpg);
+}
+
+.assistance-card-item.beach {
+  background-image: url(../img/uslugi/beach.jpg);
 }
 
 .assistance-card-item .title {
