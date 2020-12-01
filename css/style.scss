@@ -88,7 +88,7 @@ a {
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: 90vh;
+            top: 93vh;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1003;
@@ -634,7 +634,7 @@ a {
 }
 
 .tarifi {
-    background-color: #ebebeb;
+    background-color: #fff;
     max-width: 100%;
     padding-bottom: 50px;
     .container {
@@ -677,7 +677,42 @@ a {
     }
 }
 .faces {
-    background-color: #fff;
+    background-color: #ebebeb;
+    padding-bottom: 50px;
+    &-title {
+        margin-bottom: 20px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    &-wrapper {
+        width: 50%;
+        &:nth-of-type(1),&:nth-of-type(2) {
+            margin-bottom: 15px;
+        }
+
+        &:nth-last-of-type(1) {
+            justify-self: center;
+            margin: 0 auto;
+        } 
+    }
+    &-images {
+        width: 70%;
+        padding: 0 14px;
+    }
+    &-name {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    &-position {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
 }
 .howwework {
     background-color: #fff;
@@ -832,6 +867,12 @@ a {
     .years6 .slider2 {
         width: 100%;
         min-width: 0;
+    }
+    .faces {
+        &-wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -995,5 +1036,14 @@ a {
                 font-size: 1.1em;
             }
         }
+    }
+}
+
+@media (min-width:1024px) {
+    .tarifi-card-desc {
+        margin-left: 15%;
+    }
+    .faces-images {
+        
     }
 }
