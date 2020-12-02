@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <!-- Подключаем стили -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v3">
 
     <!-- Шрифты -->
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <main class="intro">
+    <main class="intro" id="top">
         <div class="intro_shadow1" id="intro4">
         </div>
         <div class="intro_shadow2" id="intro5">
@@ -64,12 +64,57 @@
                     <a href="#faces" class="intro_header-item">ЛИЦА КОМПАНИИ</a>
                     <a href="#contacts" class="intro_header-item">Контакты</a>
                 </nav>
+                <nav class="intro_header_nav2" id="mobile_menu">
+                    <a href="#ofer" id="menu1" class="intro_header-item">ОФЕР</a>
+                    <a href="#napravlenia" id="menu2" class="intro_header-item">НАПРАВЛЕНИЯ</a>
+                    <a href="#preimushestva" id="menu3" class="intro_header-item">ПРЕИМУЩЕСТВА</a>
+                    <a href="#tarifi" id="menu4" class="intro_header-item">ТАРИФЫ</a>
+                    <a href="#faces" id="menu5" class="intro_header-item">ЛИЦА КОМПАНИИ</a>
+                    <a href="#contacts" id="menu6" class="intro_header-item">Контакты</a>
+                </nav>
+                <button class="intro_header-mobile-button" id="mobile_button"></button>
+                <script>
+                    let menu = document.getElementById("mobile_menu");
+                    let button = document.getElementById("mobile_button");
+
+                        mobile_button.onclick = function () {
+                            button.style.right = "-250px";
+                            menu.style.top = "-3vh";
+                        }
+
+                        menu1.onclick = function() {
+                            menu.style.top = "-250px";
+                            button.style.right = "0";
+                        }
+                        menu2.onclick = function() {
+                            menu.style.top = "-250px";
+                            button.style.right = "0";
+                        }
+                        menu3.onclick = function() {
+                            menu.style.top = "-250px";
+                            button.style.right = "0";
+                        }
+                        menu4.onclick = function() {
+                            menu.style.top = "-250px";
+                            button.style.right = "0";
+                        }
+                        menu5.onclick = function() {
+                            menu.style.top = "-250px";
+                            button.style.right = "0";
+                        }
+                        menu6.onclick = function() {
+                            menu.style.top = "-250px";
+                            button.style.right = "0";
+                        }
+
+                        
+                </script>
             </header>
             <div class="main">
                 <h2 class="main-subtitle">В Крыму</h2>
                 <h1 class="main-title">CONCIERGE SERVICES
                 </h1>
-                <img class="main-videoButton" src="./img/play-video.png" alt="playVideo">
+                <img onclick="location.href='#'" class="main-videoButton" src="./img/play-video.png" alt="playVideo">
                 <p class="main-desc">Услуги консьерж-сервиса по организации частного отдыха с безупречным сервисом в Крыму
                 </p>
             </div>
@@ -87,7 +132,7 @@
                     <p class="cards-item_desc">&nbsp;</p>
                     <p class="cards-item_desc">&nbsp;</p>
                     <p class="cards-item_desc">&nbsp;</p>
-                    <h2 class="cards-item_price">6 500 ₽</h2>
+                    <h2 class="cards-item_price" onclick="location.href='#'">6 500 ₽</h2>
                 </div>
                 <div class="service_cards-item  headline">
                     <h3 class="cards-item_title">Travel - консьерж</h3>
@@ -95,15 +140,15 @@
                     <p class="cards-item_desc">путешествий</p>
                     <p class="cards-item_desc">&nbsp;</p>
                     <p class="cards-item_desc">&nbsp;</p>
-                    <h2 class="cards-item_price">14 500 ₽</h2>
+                    <h2 class="cards-item_price" onclick="location.href='#'">14 500 ₽</h2>
                 </div>
                 <div class="service_cards-item  headline">
                     <h3 class="cards-item_title">All inclusive – консьерж</h3>
                     <p class="cards-item_desc">Сопровождение менеджером</p>
-                    <p class="cards-item_desc">в период нахождения в</p>
-                    <p class="cards-item_desc">Крыму</p>
+                    <p class="cards-item_desc">в период нахождения</p>
+                    <p class="cards-item_desc">в Крыму</p>
                     <p class="cards-item_desc">&nbsp;</p>
-                    <h2 class="cards-item_price">38 500 ₽</h2>
+                    <h2 class="cards-item_price" onclick="location.href='#'">38 500 ₽</h2>
                 </div>
                 <div class="service_cards-item  headline">
                     <h3 class="cards-item_title">Event – консьерж</h3>
@@ -111,7 +156,7 @@
                     <p class="cards-item_desc">на высоком уровне</p>
                     <p class="cards-item_desc">“Под Ключ”</p>
                     <p class="cards-item_desc">&nbsp;</p>
-                    <p class="cards-item_price-last">Стоимость рассчитывается индивидуально
+                    <p class="cards-item_price-last" onclick="location.href='#'">Стоимость рассчитывается индивидуально
                     </p>
                 </div>
             </div>
@@ -175,13 +220,11 @@
     <section class="roots " id="napravlenia">
         <div class="container ">
             <h2 class="roots-title headline">Направления</h2>
-            <p class="roots-desc headline"><strong>Наши партнёры</strong>, это более <strong>120 компаний в Крыму</strong>, </p>
-            <p class="roots-desc headline">Предоставляющие услуги и товары в <strong>премиум сегменте</strong>, призванные сделать </p>
-            <p class="roots-desc headline">Вашу жизнь на отдыхе комфортнее, приятнее и удобнее.</p>
+            <p class="roots-desc headline"><strong>Наши партнёры</strong>, это более <strong>120 компаний в Крыму</strong>, предоставляющие услуги и товары в <strong>премиум сегменте</strong>, призванные сделать вашу жизнь на отдыхе комфортнее, приятнее и удобнее.</p>
         </div>
     </section>
 
-    <section class="advantages ">
+    <section class="advantages " id="preimushestva">
         <h2 class="advantages-title headline ">Наши ПРЕИМУЩЕСТВА</h2>
         <h2 class="advantages-title headline ">Мы ценим Вас! Нам доверяют свое время и комфорт</h2>
         <div class="container ">
@@ -396,7 +439,7 @@
                 <p class="tarifi-card-desc-first">Для новых клиентов.</p>
                 <p class="tarifi-card-desc">Возможность воспользоваться нашим сервисом и заказать одну из услуг с сопровождением менеджера.</p>
                 <p class="tarifi-card-desc">В течение 3 суток.</p>
-                <h3 class="tarifi-card-price"><strong>6500&nbsp;руб.</strong></h3>
+                <h3 class="tarifi-card-price"><span>Стоимость </span> <strong>6500&nbsp;руб.</strong></h3>
             </div>
             <div class="tarifi-card">
                 <h3 class="tarifi-card-title">Travel-консьерж</h3>
@@ -407,7 +450,7 @@
                         знес-класса</li>
                     <p class="tarifi-card-desc">Резервация столов в ресторанах</p>
                 </ul>
-                <h3 class="tarifi-card-price">Стоимость <strong>14500&nbsp;руб.</strong></h3>
+                <h3 class="tarifi-card-price"><span>Стоимость </span><strong>14500&nbsp;руб.</strong></h3>
             </div>
             <div class="tarifi-card">
                 <h3 class="tarifi-card-title">All inclusive – консьерж</h3>
@@ -436,7 +479,7 @@
                     персонала на время отдыха в Крыму (шефповар, горничная, официанты, няня, фитне
                     с тренер, стилист, массажист)</p>
                 <p class="tarifi-card-desc">В течение 3 суток.</p>
-                <h3 class="tarifi-card-price">Стоимость <strong>38500&nbsp;рублей</strong></h3>
+                <h3 class="tarifi-card-price"><span>Стоимость </span> <strong>38500&nbsp;рублей</strong></h3>
             </div>
             <div class="tarifi-card">
                 <h3 class="tarifi-card-title">Event – консьерж</h3>
@@ -450,7 +493,7 @@
                     азных по масштабам мероприятий.
                 </p>
                 <p class="tarifi-card-desc">Букинг звезд. Организация технического и бытового райдера.</p>
-                <h3 class="tarifi-card-price">Стоимость <strong>рассчитывается&nbsp;индивидуально</strong>.</h3>
+                <h3 class="tarifi-card-price" ><span>Стоимость </span> <strong>рассчитывается&nbsp;индивидуально</strong>.</h3>
             </div>
         </div>
     </section>
@@ -548,6 +591,10 @@ removeNbsp( $('#myDiv') )
             </div>
         </div>
     </section>
+
+    <div id="topWrapperMenu">
+        <a class="scroll up" href="#top"></a>
+    </div>
 
     <footer class="footer " id="contacts">
         <h2 class="footer-title ">

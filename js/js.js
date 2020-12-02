@@ -1,3 +1,6 @@
+// mobile button 
+
+
 //  анимация якоря
 //  menu yakor
 $(document).ready(function() {
@@ -8,11 +11,25 @@ $(document).ready(function() {
         $("body,html").animate({
                 scrollTop: top,
             },
-            500
+            1000
         );
     });
 });
 
+//  анимация якоря
+//  menu yakor
+$(document).ready(function() {
+    $("#topWrapperMenu").on("click", "a", function(event) {
+        event.preventDefault();
+        var id = $(this).attr("href"),
+            top = $(id).offset().top;
+        $("body,html").animate({
+                scrollTop: top,
+            },
+            1000
+        );
+    });
+});
 // slick slider
 $(document).ready(function() {
     $('.slider').slick({
