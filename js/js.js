@@ -30,6 +30,21 @@ $(document).ready(function() {
         );
     });
 });
+
+//  анимация якоря
+//  menu yakor
+$(document).ready(function() {
+    $("#myDiv").on("click", "a", function(event) {
+        event.preventDefault();
+        var id = $(this).attr("href"),
+            top = $(id).offset().top;
+        $("body,html").animate({
+                scrollTop: top,
+            },
+            1000
+        );
+    });
+});
 // slick slider
 $(document).ready(function() {
     $('.slider').slick({
