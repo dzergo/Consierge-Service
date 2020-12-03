@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consierge Service</title>
 
     <!-- Подключаем стили -->
-    <link rel="stylesheet" href="css/style.css?v3">
+    <link rel="stylesheet" href="css/style.css?v6">
 
     <!-- Шрифты -->
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -73,38 +73,70 @@
                     <a href="#contacts" id="menu6" class="intro_header-item">Контакты</a>
                 </nav>
                 <button class="intro_header-mobile-button" id="mobile_button"></button>
+                <button class="intro_header-mobile-button intro_header-mobile-button-exit" id="mobile_button_exit"></button>
                 <script>
                     let menu = document.getElementById("mobile_menu");
                     let button = document.getElementById("mobile_button");
+                    let exitButton = document.getElementById("mobile_button_exit");
+                    let introShadow = document.getElementById("intro5");
 
                         mobile_button.onclick = function () {
                             button.style.right = "-250px";
-                            menu.style.top = "-3vh";
+                            intro5.style.opacity = "0.7";
+                            menu.style.top = "0";
+                            menu.style.bottom = "30vh";
+                            exitButton.style.right = "30px";
+                        }
+
+                        mobile_button_exit.onclick = function () {
+                            button.style.right = "30px";
+                            intro5.style.opacity = "0.35";
+                            menu.style.top = "-400px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
 
                         menu1.onclick = function() {
-                            menu.style.top = "-250px";
-                            button.style.right = "0";
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
                         menu2.onclick = function() {
-                            menu.style.top = "-250px";
-                            button.style.right = "0";
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
                         menu3.onclick = function() {
-                            menu.style.top = "-250px";
-                            button.style.right = "0";
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
                         menu4.onclick = function() {
-                            menu.style.top = "-250px";
-                            button.style.right = "0";
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
                         menu5.onclick = function() {
-                            menu.style.top = "-250px";
-                            button.style.right = "0";
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
                         menu6.onclick = function() {
-                            menu.style.top = "-250px";
-                            button.style.right = "0";
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
                         }
 
                         
@@ -122,9 +154,7 @@
     <section class="service" id="ofer">
         <div class="container">
             <h2 class="service-title headline">Мы предлагаем вам сервис, время и свою экспертность</h2>
-            <p class="service-desc headline">Профессиональные lifestyle менеджеры</p>
-            <p class="service-desc headline"> которые предоставят многочисленные услуги</p>
-            <p class="service-desc headline"> класса люкс в кратчайшие сроки</p>
+            <p class="service-desc headline">Профессиональные lifestyle менеджеры которые предоставят многочисленные услуги класса люкс в кратчайшие сроки</p>
             <div class="service_cards ">
                 <div class="service_cards-item  headline">
                     <h3 class="cards-item_title">Lite &nbsp; - &nbsp; консьерж</h3>
@@ -150,7 +180,7 @@
                     <p class="cards-item_desc">&nbsp;</p>
                     <h2 class="cards-item_price" onclick="location.href='#'">38 500 ₽</h2>
                 </div>
-                <div class="service_cards-item  headline">
+                <div class="service_cards-item service_cards-item-last  headline">
                     <h3 class="cards-item_title">Event – консьерж</h3>
                     <p class="cards-item_desc">Подготовка мероприятий</p>
                     <p class="cards-item_desc">на высоком уровне</p>
@@ -597,10 +627,12 @@ removeNbsp( $('#myDiv') )
     </div>
 
     <footer class="footer " id="contacts">
-        <h2 class="footer-title ">
-            Нам доверяют в самых сложных вопросах, мы ценим и<br>
-            заботимся о наших клиентах.
-        </h2>
+        <div class="container">
+            <h2 class="footer-title ">
+                Нам доверяют в самых сложных вопросах, мы ценим и
+                заботимся о наших клиентах.
+            </h2>
+        </div>
         <p class="footer-desc ">
             Свяжитесь с нами прямо сейчас!
         </p>

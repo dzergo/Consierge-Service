@@ -153,7 +153,6 @@ a {
         z-index: 1003;
     }
     &_header {
-        position: relative;
         margin-top: 15vh;
         z-index: 3;
         &_nav, &_nav2 {
@@ -243,6 +242,7 @@ a {
         align-items: flex-start;
         &-item {
             width: 23%;
+            
             .cards-item {
                 
                 &_title {
@@ -263,8 +263,10 @@ a {
                 }
                 &_price {
                     font-size: 25px;
+                    
                     &-last {
                         font-size: 14px;
+                        font-weight: bold;
                     }
                 }
             }
@@ -565,7 +567,7 @@ a {
     .container {
         @include flexbetween();
         width: 70%;
-        text-align: left;
+        text-align: center;
         padding-top: 20px;
     }
     &-title {
@@ -573,6 +575,7 @@ a {
         font-size: 19px;
         text-align: center;
         text-transform: uppercase;
+
     }
     &-column {
         width: 40%;
@@ -843,6 +846,15 @@ a {
     display: none;
 }
 
+@media (max-width:1280px) {
+    .service-desc {
+        text-align: justify;
+    }
+    .footer-title {
+        text-align:justify;
+    }
+}
+
 @media (max-width:1125px) {
     .intro {
         min-width: 0;
@@ -950,6 +962,13 @@ a {
             
         }
     }
+    .service_cards-item-last {
+        height: 251px;
+        .cards-item_price-last {
+            font-weight: bold;
+    font-size: 17px;
+        }
+    }
 }
 
 @media (max-width:790px) {
@@ -965,6 +984,7 @@ a {
             width: 100%;
         }
     }
+    
 }
 @media (max-width:580px) {
     .service_cards { 
@@ -973,10 +993,25 @@ a {
             &:first-of-type {
                 height: 210px;
             }
-             .cards-item_desc {
-                 &:not(:first-of-type) {
-                     line-height: 1px;
-                 }
+            &:nth-last-of-type(1) {
+                height: 289px;
+            }
+             .cards {
+             &-item {
+                    &_desc {
+                        &:not(:first-of-type) {
+                            line-height: 1px;
+                        }
+                    }
+                    &_price {
+                        &-last {
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                    }
+                    
+                }
+
              }
         }
     }
@@ -985,11 +1020,19 @@ a {
 
     
     .intro { 
-        &_header{
+        .container-mobile {
+            width: 100%;
+            left: 0;
+            right: 0;
             position: relative;
+        }
+        &_shadow2 {
+            transition: 2s;
+        }
+        &_header{
             z-index: 1007;
             &-item {
-                width: 50%;
+                width: 100%;
                 margin-bottom: 12px;
             }
             &-mobile-button {
@@ -998,13 +1041,17 @@ a {
                 height: 26px;
                 position: absolute;
                 z-index: 1007;
-                top: 0;
-                right: 0;
+                top: 12vh;
+                right: 30px;
                 transition: 1s;
                 background-image: url(../img/mobile-menu.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-color: transparent;
+                &-exit {
+                    background-image: url(../img/mobile-menu-exit.png);
+                    right: -250px;
+                }
             }
             &_nav {
                 display: none;
@@ -1013,8 +1060,18 @@ a {
                 @include flexbetween();
                 position: absolute;
                 z-index: 1006;
-                top: -250px;
+                top: -400px;
+                right: -5vh;
+                left: -5vh;
+                bottom: 100vh;
+                padding: 4vh 0;
                 transition: 1s;
+                background-color: darkslategray;
+                .intro_header-item {
+                    width: 100%;
+                    margin-bottom: 0;
+                    padding-bottom: 20px;
+                }
             }
         }
         .main {
@@ -1126,6 +1183,9 @@ a {
             &-button {
                 width: 100%;
             }
+        }
+        &-desc {
+            text-align:justify;
         }
     }
 }

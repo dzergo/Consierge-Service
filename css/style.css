@@ -152,7 +152,6 @@ a {
 }
 
 .intro_header {
-  position: relative;
   margin-top: 15vh;
   z-index: 3;
 }
@@ -289,6 +288,7 @@ a {
 
 .service_cards-item .cards-item_price-last {
   font-size: 14px;
+  font-weight: bold;
 }
 
 .years6 .slider2 {
@@ -645,7 +645,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  text-align: left;
+  text-align: center;
   padding-top: 20px;
 }
 
@@ -1005,6 +1005,15 @@ a {
   display: none;
 }
 
+@media (max-width: 1280px) {
+  .service-desc {
+    text-align: justify;
+  }
+  .footer-title {
+    text-align: justify;
+  }
+}
+
 @media (max-width: 1125px) {
   .intro {
     min-width: 0;
@@ -1097,6 +1106,13 @@ a {
   .service_cards-item .cards-item_price-last {
     line-height: 24px;
   }
+  .service_cards-item-last {
+    height: 251px;
+  }
+  .service_cards-item-last .cards-item_price-last {
+    font-weight: bold;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -1121,18 +1137,33 @@ a {
   .service_cards-item:first-of-type {
     height: 210px;
   }
+  .service_cards-item:nth-last-of-type(1) {
+    height: 289px;
+  }
   .service_cards-item .cards-item_desc:not(:first-of-type) {
     line-height: 1px;
+  }
+  .service_cards-item .cards-item_price-last {
+    font-size: 25px;
+    font-weight: bold;
   }
 }
 
 @media (max-width: 415px) {
-  .intro_header {
+  .intro .container-mobile {
+    width: 100%;
+    left: 0;
+    right: 0;
     position: relative;
+  }
+  .intro_shadow2 {
+    transition: 2s;
+  }
+  .intro_header {
     z-index: 1007;
   }
   .intro_header-item {
-    width: 50%;
+    width: 100%;
     margin-bottom: 12px;
   }
   .intro_header-mobile-button {
@@ -1141,13 +1172,17 @@ a {
     height: 26px;
     position: absolute;
     z-index: 1007;
-    top: 0;
-    right: 0;
+    top: 12vh;
+    right: 30px;
     transition: 1s;
     background-image: url(../img/mobile-menu.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
+  }
+  .intro_header-mobile-button-exit {
+    background-image: url(../img/mobile-menu-exit.png);
+    right: -250px;
   }
   .intro_header_nav {
     display: none;
@@ -1158,8 +1193,18 @@ a {
     align-items: center;
     position: absolute;
     z-index: 1006;
-    top: -250px;
+    top: -400px;
+    right: -5vh;
+    left: -5vh;
+    bottom: 100vh;
+    padding: 4vh 0;
     transition: 1s;
+    background-color: darkslategray;
+  }
+  .intro_header_nav2 .intro_header-item {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 20px;
   }
   .intro .main {
     padding-top: 120px;
@@ -1236,6 +1281,9 @@ a {
   }
   .footer-form-button {
     width: 100%;
+  }
+  .footer-desc {
+    text-align: justify;
   }
 }
 
