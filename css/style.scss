@@ -1027,7 +1027,7 @@ a {
         display: inline;
     }
 }
-@media (max-height:682px) {
+@media (max-height:682px) and (min-width:1024px) {
     .intro {
         .main {
             &-subtitle {

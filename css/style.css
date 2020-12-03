@@ -1157,7 +1157,7 @@ a {
   }
 }
 
-@media (max-width: 825px) and (max-height: 682px) {
+@media (max-width: 825px) and (max-height: 682px) and (min-width: 1024px) {
   .intro .main-subtitle {
     font-size: 5vh;
     margin-bottom: 2vh;
