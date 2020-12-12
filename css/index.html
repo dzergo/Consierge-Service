@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consierge Service</title>
+
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Подключаем Slick slider -->
+    <script src="./js/slick.min.js"></script>
+
+    <!-- Подключаем scrollReveal плавное появление текста -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- Подключаем js -->
+    <script src="js/js.js"></script>
+
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="css/style.css?v7">
+
+    <!-- Импорт html слайдера -->
+    <!-- <link rel="import" href="/footer.html"> -->
+
+    <!-- Ajax Html Блоки -->
+    <!-- <script>
+        jQuery.ajax({
+            url: "/footer.html",
+            dataType: "html",
+            success: function(response) {
+                document.getElementById('container1').innerHTML = response;
+            }
+        });
+    </script> -->
+
+</head>
+
+<body>
+    <main class="intro" id="top">
+        <div class="intro_shadow1" id="intro4">
+        </div>
+        <div class="intro_shadow2" id="intro5">
+        </div>
+        <div class="slider">
+            <div class="slider__item">
+                <div class="slider__item-img consierge-img" id="intro"></div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-img yahta-img" id="intro2"></div>
+            </div>
+        </div>
+        <div class="container">
+            <header class="intro_header" id="menu">
+                <nav class="intro_header_nav">
+                    <a href="#ofer" class="intro_header-item">ОФЕР</a>
+                    <a href="#napravlenia" class="intro_header-item">НАПРАВЛЕНИЯ</a>
+                    <a href="#preimushestva" class="intro_header-item">ПРЕИМУЩЕСТВА</a>
+                    <a href="#tarifi" class="intro_header-item">ТАРИФЫ</a>
+                    <a href="#faces" class="intro_header-item">ЛИЦА КОМПАНИИ</a>
+                    <a href="#contacts" class="intro_header-item">Контакты</a>
+                </nav>
+                <nav class="intro_header_nav2" id="mobile_menu">
+                    <a href="#ofer" id="menu1" class="intro_header-item">ОФЕР</a>
+                    <a href="#napravlenia" id="menu2" class="intro_header-item">НАПРАВЛЕНИЯ</a>
+                    <a href="#preimushestva" id="menu3" class="intro_header-item">ПРЕИМУЩЕСТВА</a>
+                    <a href="#tarifi" id="menu4" class="intro_header-item">ТАРИФЫ</a>
+                    <a href="#faces" id="menu5" class="intro_header-item">ЛИЦА КОМПАНИИ</a>
+                    <a href="#contacts" id="menu6" class="intro_header-item">Контакты</a>
+                </nav>
+                <button class="intro_header-mobile-button" id="mobile_button"></button>
+                <button class="intro_header-mobile-button intro_header-mobile-button-exit" id="mobile_button_exit"></button>
+                <script>
+                    let menu = document.getElementById("mobile_menu");
+                    let button = document.getElementById("mobile_button");
+                    let exitButton = document.getElementById("mobile_button_exit");
+                    let introShadow = document.getElementById("intro5");
+
+                        mobile_button.onclick = function () {
+                            button.style.right = "-250px";
+                            intro5.style.opacity = "0.7";
+                            menu.style.top = "0";
+                            menu.style.bottom = "30vh";
+                            exitButton.style.right = "30px";
+                        }
+
+                        mobile_button_exit.onclick = function () {
+                            button.style.right = "30px";
+                            intro5.style.opacity = "0.35";
+                            menu.style.top = "-400px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+
+                        menu1.onclick = function() {
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+                        menu2.onclick = function() {
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+                        menu3.onclick = function() {
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+                        menu4.onclick = function() {
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+                        menu5.onclick = function() {
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+                        menu6.onclick = function() {
+                            menu.style.top = "-400px";
+                            intro5.style.opacity = "0.35";
+                            button.style.right = "30px";
+                            menu.style.bottom = "100vh";
+                            exitButton.style.right = "-250px";
+                        }
+
+                        
+                </script>
+            </header>
+            <div class="main">
+                <h2 class="main-subtitle">В Крыму</h2>
+                <h1 class="main-title">CONCIERGE SERVICES
+                </h1>
+                <img onclick="location.href='#'" class="main-videoButton" src="./img/play-video.png" alt="playVideo">
+                <p class="main-desc">Услуги консьерж-сервиса по организации частного отдыха с безупречным сервисом в Крыму
+                </p>
+            </div>
+    </main>
+    <section class="service" id="ofer">
+        <div class="container">
+            <h2 class="service-title headline">Мы предлагаем вам сервис, время и свою экспертность</h2>
+            <p class="service-desc headline">Профессиональные lifestyle менеджеры которые предоставят многочисленные услуги класса люкс в кратчайшие сроки</p>
+            <div class="service_cards ">
+                <div class="service_cards-item  headline">
+                    <h3 class="cards-item_title">Lite &nbsp; - &nbsp; консьерж</h3>
+                    <p class="cards-item_desc">Для новых клиентов.</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <h2 class="cards-item_price" onclick="location.href='#'">6 500 ₽</h2>
+                </div>
+                <div class="service_cards-item  headline">
+                    <h3 class="cards-item_title">Travel - консьерж</h3>
+                    <p class="cards-item_desc">Для подготовки</p>
+                    <p class="cards-item_desc">путешествий</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <h2 class="cards-item_price" onclick="location.href='#'">14 500 ₽</h2>
+                </div>
+                <div class="service_cards-item  headline">
+                    <h3 class="cards-item_title">All inclusive – консьерж</h3>
+                    <p class="cards-item_desc">Сопровождение менеджером</p>
+                    <p class="cards-item_desc">в период нахождения</p>
+                    <p class="cards-item_desc">в Крыму</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <h2 class="cards-item_price" onclick="location.href='#'">38 500 ₽</h2>
+                </div>
+                <div class="service_cards-item service_cards-item-last  headline">
+                    <h3 class="cards-item_title">Event – консьерж</h3>
+                    <p class="cards-item_desc">Подготовка мероприятий</p>
+                    <p class="cards-item_desc">на высоком уровне</p>
+                    <p class="cards-item_desc">“Под Ключ”</p>
+                    <p class="cards-item_desc">&nbsp;</p>
+                    <p class="cards-item_price-last" onclick="location.href='#'">Стоимость рассчитывается индивидуально
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="years6 " id="">
+        <div class="slider2">
+            <div class="slider2_item">
+                <div class="slider2__item-img vip-img">
+                    <h2 class="vip-img_title">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+            <div class="slider2_item">
+                <div class="slider2__item-img vip-img" ">
+                    <h2 class="vip-img_title ">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+            <div class="slider2_item ">
+                <div class="slider2__item-img vip-img ">
+                    <h2 class="vip-img_title ">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+            <div class="slider2_item ">
+                <div class="slider2__item-img vip-img ">
+                    <h2 class="vip-img_title ">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+            <div class="slider2_item ">
+                <div class="slider2__item-img vip-img ">
+                    <h2 class="vip-img_title ">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+            <div class="slider2_item ">
+                <div class="slider2__item-img vip-img ">
+                    <h2 class="vip-img_title ">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+            <div class="slider2_item ">
+                <div class="slider2__item-img vip-img ">
+                    <h2 class="vip-img_title ">6 лет работы с vip клиентом в Крыму</h2>
+                    <p class="vip-img_desc"><span>Позволяют нам выполнять как самые простые запросы, так</span>
+                        <span>и сложные поручения наших клиентов</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="roots " id="napravlenia">
+        <div class="container ">
+            <h2 class="roots-title headline">Направления</h2>
+            <p class="roots-desc headline"><strong>Наши партнёры</strong>, это более <strong>120 компаний в Крыму</strong>, предоставляющие услуги и товары в <strong>премиум сегменте</strong>, призванные сделать вашу жизнь на отдыхе комфортнее, приятнее и удобнее.</p>
+        </div>
+    </section>
+
+    <section class="advantages " id="preimushestva">
+        <h2 class="advantages-title headline ">Наши ПРЕИМУЩЕСТВА</h2>
+        <h2 class="advantages-title headline ">Мы ценим Вас! Нам доверяют свое время и комфорт</h2>
+        <div class="container ">
+            <div class="advantages-column headline">
+                <p class="advantages-column-title ">Проверенная информация</p>
+                <p class="advantages-column-desc ">Вам не нужно самостоятельно и в разных источниках искать информацию, подбирать исполнителей, волноваться за профессионализм и качество услуги, контролировать выполнение заданий. Достаточно иметь наш номер телефона и поручить решение задач нам.
+                </p>
+
+            </div>
+            <div class="advantages-column headline">
+                <p class="advantages-column-title ">Мы доступны 24 часа в сутки
+                </p>
+                <p class="advantages-column-desc ">Вы можете давать указания личному консьержу в любое время. По звонку или в мессенджерах. 
+                </p>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="advantages-column headline">
+                <p class="advantages-column-title ">Фиксированный гонорар</p>
+                <p class="advantages-column-desc ">Вы выбираете один из фиксированных тарифов и в дальнейшем не переплачиваете за товары и услуги. Мы представляем вам максимальные скидки от партнеров.</p>
+
+            </div>
+            <div class="advantages-column headline">
+                <p class="advantages-column-title ">6 лет работы с vip клиентом</p>
+                <p class="advantages-column-desc ">Позволяют нам выполнять как самые простые запросы, так и сложные поручения наших клиентов.</p>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="advantages-column headline">
+                <p class="advantages-column-title ">Коммуникации</p>
+                <p class="advantages-column-desc ">После получения задачи персональный менеджер  приступает к ее выполнению, подключает все наши коммуникации с партнерами и ресурсы, чтобы сделать возможное и невозможное.</p>
+
+            </div>
+            <div class="advantages-column headline">
+                <p class="advantages-column-title ">Конфиденциальность</p>
+                <p class="advantages-column-desc ">Любые детали ваших поручений, организации досуга и путешествий не разглашаются. 
+                    В рамках договора подписываем соглашение о конфиденциальности.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="assistance " id="assistance">
+        <div class="container headline">
+            <h2 class="assistance-title ">Наши услуги</h2>
+            <p class="assistance-desc ">Мы удовлетворим все ваши запросы</p>
+            <p class="assistance-desc ">и решим любую поставленную задачу</p>
+        </div>
+        <div class="assistance-card " id="assistanceCard">
+            <div class="assistance-card-item headline podbiraem-broniruem">
+                <h2 class="title ">Подбираем и бронируем</h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div><p class="desc ">отели, эксклюзивные виллы</p>
+                    <p class="desc ">и шале в Крыму</p></div>
+            </div>
+            <div class="assistance-card-item headline organizaciya-chastnih">
+                <h2 class="title ">Организация частных
+                </h2>
+                <h2 class="title ">перелетов</h2>
+                <div>
+                    <p class="desc ">личного чартера, вертолетов,</p> 
+                    <p class="desc ">бронирование и выкуп авиабилетов,</p>
+                    <p class="desc ">заказ VIP-залов и услуги Fast track</p>
+                    <p class="desc ">в аэропортах.</p>
+                </div>
+            </div>
+            <div class="assistance-card-item headline predostavleniya-transfera">
+                <h2 class="title ">Предоставление трансфера
+                </h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div>
+                    <p class="desc ">из аэропорта, личный водитель,</p> 
+                    <p class="desc ">аренда автомобилей бизнес класса</p>
+                </div>
+            </div>
+            <div class="assistance-card-item headline predostavleniya-ohrani">
+                <h2 class="title ">Предоставление охраны 
+                </h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div>
+                    <p class="desc ">персональная охрана 4-5 разряда</p> 
+                </div>
+            </div>
+            <div class="assistance-card-item headline arenda-yaht">
+                <h2 class="title ">арендА парусных</h2>
+                <h2 class="title ">и моторных яхт</h2>
+                <div>
+                    <p class="desc ">специальные условия</p>
+                </div>
+            </div>
+            <div class="assistance-card-item headline organizaciya-detskogo">
+                <h2 class="title ">Организация детского отдыха</h2>
+                <h2 class="title ">и моторных яхт</h2>
+                <div>
+                    <p class="desc ">в лучших экскурсионных и развлекательных</p>
+                    <p class="desc">местах Крыма</p>
+                </div>
+            </div>
+            <div class="assistance-card-item headline dostup-k-luchshim">
+                <h2 class="title ">Доступ к лучшим</h2>
+                <h2 class="title ">оздоровительным центрам</h2>
+                <div>
+                    <p class="desc ">в Крыму с международными</p> 
+                    <p class="desc ">стандартами лечения</p>
+                    <p class="desc ">и современными методиками</p>
+                </div>
+            </div>
+            <div class="assistance-card-item headline travel-turi">
+                <h2 class="title ">Разрабатываем индивидуальные</h2>
+                <h2 class="title ">travel-туры</h2>
+            </div>
+            <div class="assistance-card-item animation height-animation gastro-turi">
+                <h2 class="title ">Гастрономические туры</h2>
+            </div>
+            <div class="assistance-card-item animation height-animation gastro-gid">
+                <h2 class="title ">Гастро гид по Крыму</h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div>
+                    <p class="desc ">Организация вкусных завтраков,роскошных обедов</p> 
+                    <p class="desc ">и изысканных ужинов в лучших ресторанах или </p>
+                    <p class="desc ">навидовых панорамных площадках.</p>
+                    <p class="desc">Презентация индивидуального меню от шеф-повара.</p>
+                    <p class="desc">Резервация столов с пред заказом.</p>
+                    <p class="desc">Организация кейтеринга и обслуживания на выезде</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation uslugi-somelie">
+                <h2 class="title ">Услуги сомелье</h2>
+                <h2 class="title ">для ценителей виски</h2>
+                <div>
+                    <p class="desc ">шотландский, ирландский</p> 
+                    <p class="desc ">и американский виски</p>
+                    <p class="desc ">и других уголков земного шара</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation uslugi-somelie2">
+                <h2 class="title ">Услуги сомелье</h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div><p class="desc ">Вина и игристые Крыма, Италии,</p>
+                    <p class="desc ">Испании и Франции</p></div>
+            </div>
+            <div class="assistance-card-item animation height-animation zakaz-dostavka">
+                <h2 class="title ">Заказ и доставка</h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div>
+                    <p class="desc ">натуральных и органических</p> 
+                    <p class="desc ">продуктов, морепродуктов</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation semeyniy-uzhin">
+                <h2 class="title ">Организация семейных ужинов
+                </h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div>
+                    <p class="desc ">частные и корпоративные мероприятия </p> 
+                    <p class="desc ">“под ключ” от лучших региональных</p>
+                    <p class="desc">и материковых ивент агентств</p>
+                </div>
+            </div>      
+            <div class="assistance-card-item animation height-animation gifts">
+                <h2 class="title ">Покупка и доставка</h2>
+                <h2 class="title ">&nbsp;</h2>
+                <div>
+                    <p class="desc ">эксклюзивных подарков и поздравлений</p>
+                </div>
+            </div>      
+            <div class="assistance-card-item animation height-animation bileti">
+                <h2 class="title ">Бронирование пригласительных</h2>
+                <h2 class="title">билетов</h2>
+                <div>
+                    <p class="desc">на концерты и события</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation kartini">
+                <h2 class="title ">Приобретение картин</h2>
+                <h2 class="title ">на арт-аукционах</h2>
+                <div>
+                    <p class="desc ">в Крыму с международными</p> 
+                    <p class="desc ">стандартами лечения</p>
+                    <p class="desc ">и современными методиками</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation butiki">
+                <h2 class="title ">Обеспечиваем привилегии в</h2>
+                <h2 class="title ">бутиках и салонах красоты</h2>
+                <div>
+                    <p class="desc ">Опция выезд на дом стилис</p> 
+                    <p class="desc ">та для создания образа</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation personal">
+                <h2 class="title ">Подбор персонала на</h2>
+                <h2 class="title ">время отдыха в Крыму</h2>
+                <div>
+                    <p class="desc ">шеф-повар, горничная, официанты,</p> 
+                    <p class="desc "> няня, фитнес тренер, стилист, массажист</p>
+                </div>
+            </div>
+            <div class="assistance-card-item animation height-animation beach">
+                <h2 class="title ">Бронирование лучших</h2>
+                <h2 class="title ">пляжных зон</h2>
+            </div>
+        </div>
+        <a class="assistance-link" id="seeUslugi" href="javascript://" onclick="$('.assistance-card-item headline').removeClass( 'animation', 5000, 'EaseIn' );">Смотреть все услуги</a>
+    </section>
+
+    <section class="tarifi" id="tarifi">
+        <h2 class="tarifi-title">Наши тарифы</h2>
+        
+        <div class="container" id="myDiv">
+            <div class="tarifi-card">
+                <h3 class="tarifi-card-title">Lite - консьерж</h3>
+                <p class="tarifi-card-desc-first">Для новых клиентов.</p>
+                <p class="tarifi-card-desc">Возможность воспользоваться нашим сервисом и заказать одну из услуг с сопровождением менеджера.</p>
+                <p class="tarifi-card-desc">В течение 3 суток.</p>
+                <a class="tarifi-card-price"  href='#contacts'><span>Стоимость </span> <strong>6500&nbsp;руб.</strong></a>
+            </div>
+            <div class="tarifi-card">
+                <h3 class="tarifi-card-title">Travel-консьерж</h3>
+                <p class="tarifi-card-desc-first">Для подготовки путешествий.</p>
+                <p class="tarifi-card-desc">Бронирование и выкуп авиа билетов, заказ VIP-залов и услуги Fast track в аэропортах.</p>
+                    <p class="tarifi-card-desc">Подбираем и бронируем отели, готовые или индивидуальные туры.</p>
+                    <p class="tarifi-card-desc">Предоставление трансфера из аэропорта, личный водитель, аренда автомобилей би
+                        знес-класса</li>
+                    <p class="tarifi-card-desc">Резервация столов в ресторанах</p>
+                </ul>
+                <a class="tarifi-card-price"  href='#contacts'><span>Стоимость </span><strong>14500&nbsp;руб.</strong></a>
+            </div>
+            <div class="tarifi-card">
+                <h3 class="tarifi-card-title">All inclusive – консьерж</h3>
+                <p class="tarifi-card-desc-first">Сопровождение менеджером в период нахождения в Крыму</p>
+                <p class="tarifi-card-desc">Подбор и бронь отелей, эксклюзивных вилл и шале</p>
+                <p class="tarifi-card-desc">Бронирование и выкуп авиабилетов, заказ VIP-
+                    залов и услуги Fast track в аэропортах</p>
+                <p class="tarifi-card-desc">Трансфер из аэропорта, аренда автомобилей бизнес-класса, личный водитель</p>
+                <p class="tarifi-card-desc">Специальные условия по аренде парусных и моторных яхт</p>
+                <p class="tarifi-card-desc">Организация детского отдыха в лучших экскурсионных и развлекательных местах 
+                    Крыма</p>
+                <p class="tarifi-card-desc">Разрабатываем индивидуальные travel-туры</p>
+                <p class="tarifi-card-desc">Гастрономические туры, посещение винных хозяйств, устричных ферм, сыроварней</p>
+                <p class="tarifi-card-desc">Гастро гид по Крыму. Организация вкусных завтраков, роскошных обедов и изыска
+                    нных ужинов в лучших ресторанах или
+                    на видовых панорамных площадках. Презентация индивидуального меню от шеф-
+                     повара. Резервация столов с пред заказом. Организация кейтеринга и обслуживания 
+                    на выезде.</p>
+                <p class="tarifi-card-desc">Услуги сомелье для ценителей виски. Поставка таких образцов, как шотландский, и
+                    рландский и американский виски, в коллекции так же, есть превосходные напитки из
+                     Уэльса, Франции, Японии, Тайваня и других уголков земного шара.</p>
+                <p class="tarifi-card-desc">Услуги сомелье. Вина и игристые Крыма, Италии, Испании и Франции</p>
+                <p class="tarifi-card-desc">Заказ и доставка натуральных и органических продуктов, морепродуктов. Качество 
+                    и свежесть продуктов, удовлетворит самого требовательного клиента</p>
+                <p class="tarifi-card-desc">Подбор 
+                    персонала на время отдыха в Крыму (шефповар, горничная, официанты, няня, фитне
+                    с тренер, стилист, массажист)</p>
+                <p class="tarifi-card-desc">В течение 3 суток.</p>
+                <a class="tarifi-card-price"  href='#contacts'><span>Стоимость </span> <strong>38500&nbsp;рублей</strong></a>
+            </div>
+            <div class="tarifi-card">
+                <h3 class="tarifi-card-title">Event – консьерж</h3>
+                <p class="tarifi-card-desc-first">Подготовка мероприятий на высоком уровне “Под Ключ”</p>
+                <p class="tarifi-card-desc">Подбор команды материковых и региональных агентств
+                    </p>
+                <p class="tarifi-card-desc">Подбор площадки/ресторана (в том числе осмотр площадки, переговоры с владель
+                        цами и.т.д).</p>
+                <p class="tarifi-card-desc"> Декор и флористическое оформление мероприятия</p>
+                <p class="tarifi-card-desc">Техническое обеспечение, разнообразные комплексные решения для проведения р
+                    азных по масштабам мероприятий.
+                </p>
+                <p class="tarifi-card-desc">Букинг звезд. Организация технического и бытового райдера.</p>
+                <a class="tarifi-card-price"  href='#contacts'><span>Стоимость </span> <strong>рассчитывается&nbsp;индивидуально.</strong></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        function removeNbsp($el) {
+  $el.contents().each(function() {
+    if (this.nodeType === 3) {
+      this.nodeValue = this.nodeValue.replace(/\u00A0/g, ' ');
+    } else {
+      removeNbsp( $(this) );
+    }
+  });
+}
+removeNbsp( $('#myDiv') )
+    </script>
+
+    <section class="faces" id="faces">
+        <h2 class="faces-title">Лица Компании</h2>
+        <div class="container">
+            <div class="faces-wrapper">
+                <img class="faces-images" src="./img/faces/1DX27940_pp.jpg" alt="">
+                <h3 class="faces-name">Ольга</h3>
+                <p class="faces-position">Генеральный директор</p>
+            </div>
+            <div class="faces-wrapper">
+                <img class="faces-images" src="./img/faces/1DX27862_pp.jpg" alt="">
+                <h3 class="faces-name">Ирина</h3>
+                <p class="faces-position">Исполнительный директор</p>
+            </div>
+            <div class="faces-wrapper">
+                <img class="faces-images" src="./img/faces/Photo-15.jpg" alt="">
+                <h3 class="faces-name">Виктория</h3>
+                <p class="faces-position">Менеджер консьерж сервиса</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="howwework ">
+        <h2 class="howwework-title ">Как мы работаем?</h2>
+        <div class="container ">
+            <div class="howwework-column ">
+                <div class="howwework-column-wrapper ">
+                    <p class="howwework-column-wrapper_digit ">1</p>
+                    <div><p class="howwework-column-wrapper_desc ">Отправляете заявку на сайт,</p>
+                        <p class="howwework-column-wrapper_desc ">по телефону или в Whats app</p></div>
+                </div>
+                <div class="howwework-column-wrapper ">
+                    <p class="howwework-column-wrapper_digit ">2</p>
+                    <div><p class="howwework-column-wrapper_desc ">Менеджер связывается с Вами,</p>
+                        <p class="howwework-column-wrapper_desc ">уточняет пожелание,</p>
+                        <p class="howwework-column-wrapper_desc ">согласовывает сроки и бюджет</p></div>
+                </div>
+                <div class="howwework-column-wrapper ">
+                    <p class="howwework-column-wrapper_digit ">3</p>
+                    <div><p class="howwework-column-wrapper_desc ">Заключаем договор</p>
+                        <p class="howwework-column-wrapper_desc ">на предоставление услуг</p></div>
+                </div>
+            </div>
+            <div class="howwework-column ">
+                <div class="howwework-column-wrapper ">
+                    <p class="howwework-column-wrapper_digit ">4</p>
+                    <div><p class="howwework-column-wrapper_desc ">Вы вносите 50% предоплаты</p>
+                        <p class="howwework-column-wrapper_desc ">согласно выбранного тарифа</p></div>
+                </div>
+                <div class="howwework-column-wrapper ">
+                    <p class="howwework-column-wrapper_digit ">5</p>
+                    <div><p class="howwework-column-wrapper_desc ">Мы оперативно приступаем</p>
+                        <p class="howwework-column-wrapper_desc ">к выполнению задач</p>
+                        <p class="howwework-column-wrapper_desc ">и оказанию услуги</p></div>
+                </div>
+                <div class="howwework-column-wrapper ">
+                    <p class="howwework-column-wrapper_digit ">6</p>
+                    <div><p class="howwework-column-wrapper_desc "><strong>Вы - наш довольный клиент!</strong></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="topWrapperMenu">
+        <a class="scroll up" href="#top"></a>
+    </div>
+
+    <footer class="footer " id="contacts">
+        <div class="container">
+            <h2 class="footer-title ">
+                Нам доверяют в самых сложных вопросах,<br>
+                мы ценим и заботимся о наших клиентах.
+            </h2>
+        </div>
+        <p class="footer-desc ">
+            Свяжитесь с нами прямо сейчас!
+        </p>
+
+        <div id="form_144455_1"></div>
+<script type="text/javascript">
+   (function (d, w, c) {
+       (w[c] = w[c] || []).push({formId:144455,host:"formdesigner.ru",formHeight:100, el: "form_144455_1",center: 1,scroll: 0});
+       var s = d.createElement("script"), g = "getElementsByTagName";
+       s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
+       s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js";
+       var h=d[g]("head")[0] || d[g]("body")[0];
+       h.appendChild(s);
+   })(document, window, "fdforms");
+</script>
+        </div>
+        <p class="footer-desc "><span>Крым, Севастополь, Морская, 10-А</span><br> 8 (978) 222-33-22</p>
+        <p class="footer-desc "><img src="./img/mail.jpg " alt=" "></p>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.headline', {
+            delay: 200
+        });
+    </script>
+
+</body>
+
+</html>
