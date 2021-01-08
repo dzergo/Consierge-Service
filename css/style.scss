@@ -43,6 +43,13 @@ a {
     text-decoration: none;
 }
 
+section {
+    background-color: #fff;
+    &:nth-of-type(2n) {
+        background-color: #ebebeb;
+    }
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -71,12 +78,12 @@ a {
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            .consierge-img {
-                background-image: url(../img/bgimg.jpg);
-                background-position-y: 60%;
-            }
             .yahta-img {
                 background-image: url(../img/bgimg2.jpg);
+            }
+            .consierge-img {
+                background-image: url(../img/bgimg.jpg);
+                background-position: 40%;
             }
         }
         .slick-arrow {
@@ -124,25 +131,26 @@ a {
     }
     &_shadow1 {
         position: absolute;
-        top: 2vh;
-        left: 0.5%;
-        right: 0.5%;
+        top: 0;
+        left: 0;
+        right: 0;
         bottom: 0;
-        opacity: 0.25;
+        opacity: 0.5;
         background-color: #000;
         z-index: 1001;
+        transition: 0.5s;
     }
-    &_shadow2 {
-        opacity: 0.35;
-        background-color: #000;
-        position: absolute;
-        top: 10vh;
-        left: 1%;
-        right: 1%;
-        bottom: 0;
-        z-index: 1002;
-        mix-blend-mode: multiply;
-    }
+    // &_shadow2 {
+    //     opacity: 0.35;
+    //     background-color: #000;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     z-index: 1002;
+    //     mix-blend-mode: multiply;
+    // }
     .container {
         position: absolute;
         top: 0;
@@ -200,7 +208,7 @@ a {
             line-height: 0.95;
             text-align: center;
             font-weight: 100;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
         }
         &-videoButton {
             width: 70px;
@@ -221,7 +229,7 @@ a {
 .service {
     text-align: center;
     color: #1c1c1c;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     &-title {
         text-transform: uppercase;
         font-weight: 600;
@@ -359,7 +367,6 @@ a {
 .howwework {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #ebebeb;
     .container {
         padding: 80px 0;
         color: #1c1c1c;
@@ -386,17 +393,16 @@ a {
         strong {
             font-weight: 500;
         }
-        &:not(:first-of-type) {
+        &:first-of-type {
             margin-top: 0;
         }
-        &:not(:last-of-type) {
+        &:last-of-type {
             margin-bottom: 0;
         }
     }
 }
 
 .assistance {
-    background-color: #ebebeb;
     padding-bottom: 50px;
     text-align: center;
     &-desc {
@@ -424,8 +430,9 @@ a {
             background-size: cover;
             position: relative;
             opacity: 100%;
-            cursor: default;
+            cursor: pointer;
             transition: all 1s ease-out;
+            
             &.animation {
             opacity: 0;
             // animation: example_animation 500ms;
@@ -462,8 +469,10 @@ a {
                     background-color: #303030;
                 }
             }
-            &:hover::after {
+            &:hover {
+                &::after {
                 opacity: 55%;
+                }
             }
             &.podbiraem-broniruem {
                 background-image: url(../img/uslugi/uslugi1.jpg);
@@ -482,15 +491,16 @@ a {
             }
             &.organizaciya-detskogo {
                 background-image: url(../img/uslugi/organizaciya-detskogo.jpg);
+                background-position: 95%;
             }
             &.gastro-turi {
                 background-image: url(../img/uslugi/uslugi5.jpg);
-            }
-            &.gastro-gid {
-                background-image: url(../img/uslugi/gastro-gid.jpg);
                 div p {
                     font-size: 13px;
                 }
+            }
+            &.gastro-gid {
+                background-image: url(../img/uslugi/gastro-gid.jpg);
             }
             &.dostup-k-luchshim {
                 background-image: url(../img/uslugi/uslugi6.jpg);
@@ -506,12 +516,14 @@ a {
             }
             &.uslugi-somelie2 {
                 background-image: url(../img/uslugi/somelie2.jpg);
+                background-size: 107%;
             }
             &.semeyniy-uzhin {
                 background-image: url(../img/uslugi/semeyniy-uzhin.jpg);
             }
             &.gifts {
                 background-image: url(../img/uslugi/gifts.jpg);
+                background-size: 122%;
             }
             &.bileti {
                 background-image: url(../img/uslugi/bileti.jpg);
@@ -521,9 +533,11 @@ a {
             }
             &.butiki {
                 background-image: url(../img/uslugi/butiki.jpg);
+                background-size: 170%;
             }
             &.personal {
                 background-image: url(../img/uslugi/personal.jpg);
+                background-size: 123%;
             }
             &.beach {
                 background-image: url(../img/uslugi/beach.jpg);
@@ -560,10 +574,15 @@ a {
     }
 }
 
+.roots {
+    &-title {
+        margin-bottom: 10px;
+    }
+}
+
 .howwework,
 .advantages,.tarifi,.faces,
 .footer {
-    background-color: #ebebeb;
     padding-top: 90px;
     text-align: center;
     .container {
@@ -597,6 +616,7 @@ a {
                 font-weight: 500;
                 margin: 0;
                 margin-right: 70px;
+                width: 12%;
             }
             &_desc {
                 font-size: 15px;
@@ -635,6 +655,10 @@ a {
         &-title {
             font-weight: 500;
             text-transform: uppercase;
+            text-align: left;
+        }
+        &-desc {
+            text-align: left;
         }
     }
     &-wrapper {
@@ -702,7 +726,6 @@ a {
     }
 }
 .faces {
-    background-color: #ebebeb;
     padding-bottom: 50px;
     &-title {
         margin-bottom: 20px;
@@ -741,6 +764,24 @@ a {
 }
 .howwework {
     background-color: #fff;
+    padding: 40px 0 0 0 ;
+    .container {
+        padding-bottom: 40px;
+    }
+    &-column {
+        &-wrapper {
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+            div{
+                width: 70%;
+                p {
+                font-weight: 500;
+                text-align: left;
+                }
+            }
+        }
+    }
 }
 
 .scroll, .scroll:active, .scroll:focus {
@@ -850,6 +891,20 @@ a {
     display: none;
 }
 
+@media (min-width:675px) and (max-height:777px) {
+    .intro,
+    .intro .slider,
+    .intro .slider .slick-list,
+    .intro .slider .slick-track,
+    .intro .slider .slider__item-img
+      {
+        min-height: 777px;
+    }
+    .intro .slider .slick-dots {
+        top: 700px;
+    }
+    
+}
 @media (max-width:1280px) {
     .footer-title {
         text-align:left;
@@ -990,6 +1045,9 @@ a {
             width: 100%;
         }
     }
+    .assistance-card-item.gastro-turi div p {
+        margin-top: 3px;
+    }
 }
     
 
@@ -1064,6 +1122,11 @@ a {
         .slider .slick-dots {
             top: 90vh;
         }
+        .main {
+            &-title {
+                
+            }
+        }
         &_shadow2 {
             transition: 2s;
         }
@@ -1117,7 +1180,7 @@ a {
             padding-top: 120px;
             &-title {
             font-size: 55px;
-            margin-bottom: 40px;
+            margin-bottom: 100px;
             }
             &-videoButton {
                 margin-bottom: 46px;
@@ -1257,7 +1320,7 @@ a {
             }
             &-title {
                 font-size: 3.2em;
-                margin-bottom: 30px;
+                margin-bottom: 100px;
             }
             &-videoButton {
                 width: 80px;
@@ -1274,7 +1337,7 @@ a {
         .main {
             padding-top: 120px;
             &-title {
-                margin-bottom: 61px;
+                margin-bottom: 120px;
             }
             &-videoButton {
                 margin-bottom: 51px;
@@ -1297,7 +1360,7 @@ a {
             }
             &-title {
                 font-size: 3.2em;
-                margin-bottom: 25px;
+                margin-bottom: 75px;
             }
             &-videoButton {
                 width: 70px;
