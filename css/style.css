@@ -80,6 +80,11 @@ section:nth-of-type(2n) {
   background-position: 40%;
 }
 
+.intro .slider__item .consierge-img1 {
+  background-image: url(../img/bgimg1.jpg);
+  background-position: 40%;
+}
+
 .intro .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -950,9 +955,6 @@ section:nth-of-type(2n) {
 .footer-desc {
   font-size: 15px;
   margin-bottom: 40px;
-}
-
-.footer-desc:nth-of-type(2) {
   font-size: 18px;
   font-weight: 100;
 }
@@ -965,6 +967,10 @@ section:nth-of-type(2n) {
   text-align: center;
   width: 30px;
   height: 20px;
+}
+
+.footer-desc.footer-mail {
+  text-transform: none;
 }
 
 .footer-form {

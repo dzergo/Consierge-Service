@@ -85,6 +85,10 @@ section {
                 background-image: url(../img/bgimg.jpg);
                 background-position: 40%;
             }
+            .consierge-img1 {
+                background-image: url(../img/bgimg1.jpg);
+                background-position: 40%;
+            }
         }
         .slick-arrow {
             position: absolute;
@@ -839,10 +843,8 @@ section {
     &-desc {
         font-size: 15px;
         margin-bottom: 40px;
-        &:nth-of-type(2) {
-            font-size: 18px;
-            font-weight: 100;
-        }
+        font-size: 18px;
+        font-weight: 100;
         &:last-of-type {
             margin-bottom: 0;
             img {
@@ -850,6 +852,9 @@ section {
                 width: 30px;
                 height: 20px;
             }
+        }
+        &.footer-mail {
+            text-transform: none;
         }
     }
     &-form {
