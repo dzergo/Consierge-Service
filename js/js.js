@@ -75,7 +75,7 @@ $(document).ready(function() {
 seeUslugi.onclick = function (){
     // убрать высоту
     function elongation() {
-        $('.assistance-card-item').removeClass( 'animation', 3000, 'EaseIn' );
+        $('.assistance-card-item').removeClass( 'animation', 4000, 'EaseIn' );
     }
 
     // убрать кнопку
